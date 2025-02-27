@@ -1,7 +1,8 @@
 :root {
-  --white-color: #fff
-  --black-color: #000
-  --text-color: #333
+  --primary-color: #ee4d2d;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
 }
 
 * {
@@ -31,11 +32,24 @@ html {
 }
 
 
-/* .roboto-<uniquifier> {
+.roboto-300 {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-} */
+}
+
+
+/* animation */
+
+@keyframes faceIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
