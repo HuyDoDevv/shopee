@@ -21,10 +21,33 @@
   min-height: 26px;
 }
 
+.header__navber-item--has-notify {
+  position: relative;
+}
+
+.header__navber-item--count {
+  width: 15px;
+  max-width: 20px;
+  position: absolute;
+  padding: 1px;
+  top: 0;
+  right: 75%;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
 .header__navber-item--has-notify:hover .header__notify {
   display: block;
 }
 
+.header__navber-item--has-notify:hover .header__navber-item--count {
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
 
 .header__navber-item--has-qr:hover .header__qr {
   display: block;
@@ -213,15 +236,15 @@
 
 }
 
-.header__notify_item {
+.header__notify-item {
   display: flex;
 }
 
-.header__notify_item:hover {
+.header__notify-item:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.header__notify_item--viewed {
+.header__notify-item--viewed {
   background-color: rgba(238, 75, 43, 0.08);
 }
 
@@ -439,7 +462,7 @@
 .auth-form__help-link {
   text-decoration: none;
   font-size: 1.4rem;
-  color:  #939393;
+  color: #939393;
 }
 
 .auth-form__help-separate {
