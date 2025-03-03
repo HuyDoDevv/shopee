@@ -21,6 +21,7 @@ html {
   box-sizing: border-box;
 }
 
+/* response */
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -34,6 +35,20 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.grid__column-2 {
+  width: 16.6667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.grid__column-10 {
+  width: 83.3334%;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 
@@ -111,7 +126,7 @@ html {
   cursor: pointer;
   color: var(--text-color);
   background-color: var(--white-color);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   line-height: 1.6rem;
@@ -136,4 +151,50 @@ html {
   cursor: default;
   background-color: #c3c3c3;
   color: #000;
+}
+
+/* Selection */
+
+.select-input {
+  min-width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  padding: 8px 16px;
+  list-style: none;
+  display: none;
+}
+
+.select-input:hover .select-input__list{
+  display: block;
+}
+
+
+.select-input__item {
+  font-size: 1.4rem;
+  display: block;
+  padding: 5px 0;
+}
+
+.select-input__link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.select-input__link:hover {
+  color: var(--primary-color);
 }
