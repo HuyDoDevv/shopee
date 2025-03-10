@@ -52,6 +52,50 @@ html {
   padding-right: 5px;
 }
 
+.grid__column-3 {
+  width: 25%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-4 {
+  width: 33.3334%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-5 {
+  width: 41.6667%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-6 {
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-7 {
+  width: 58.3334%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-8 {
+  width: 66.6667%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid__column-9 {
+  width: 75%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
 .grid__column-10 {
   width: 83.3334%;
   padding-left: 5px;

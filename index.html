@@ -179,47 +179,60 @@
             </a>
           </div>
 
-          <div class="header__search">
-            <div class="header__search-input-wrap">
-              <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+          <div class="header__search-container">
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
 
-              <div class="header__search-history">
-                <h3 class="header__search-history-heading">
-                  Lịch sử tìm kiếm
-                </h3>
-                <ul class="header__search-history-list">
-                  <li class="header__search-history-item">
-                    <a href="">Kem</a>
-                  </li>
-                  <li class="header__search-history-item">
-                    <a href="">Mỹ phẩm</a>
-                  </li>
-                  <li class="header__search-history-item">
-                    <a href="">Đồ gia dụng</a>
-                  </li>
-                </ul>
+                <div class="header__search-history">
+                  <h3 class="header__search-history-heading">
+                    Lịch sử tìm kiếm
+                  </h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Kem</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Mỹ phẩm</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Đồ gia dụng</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="header__search-select">
-              <span class="header__search-select-label">
-                Trong shop
-                <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+              <div class="header__search-select">
+                <span class="header__search-select-label">
+                  Trong shop
+                  <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
 
-                <ul class="header__search-option">
-                  <li class="header__search-option-item header__search-option-item--active">
-                    <span>Trong shop</span>
-                    <i class="fa-solid fa-check"></i>
-                  </li>
-                  <li class="header__search-option-item">
-                    <span>Ngoài shop</span>
-                    <i class="fa-solid fa-check"></i>
-                  </li>
-                </ul>
-              </span>
+                  <ul class="header__search-option">
+                    <li class="header__search-option-item header__search-option-item--active">
+                      <span>Trong shop</span>
+                      <i class="fa-solid fa-check"></i>
+                    </li>
+                    <li class="header__search-option-item">
+                      <span>Ngoài shop</span>
+                      <i class="fa-solid fa-check"></i>
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
-            <button class="header__search-btn">
-              <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
-            </button>
+
+            <div class="header__search-suggest">
+              <a class="header__search-suggest-link" href="#">Ống nhòm</a>
+              <a class="header__search-suggest-link" href="#">Sale 1k Điện Thoại Iphone</a>
+              <a class="header__search-suggest-link" href="#">Baby Three Giá Rẻ 1k</a>
+              <a class="header__search-suggest-link" href="#">Xe máy Wave 50cc</a>
+              <a class="header__search-suggest-link" href="#">Bộ Đồ Hầu gái</a>
+              <a class="header__search-suggest-link" href="#">Thẻ Vettel 50k</a>
+              <a class="header__search-suggest-link" href="#">Vitamin D3 K2</a>
+              <a class="header__search-suggest-link" href="#">8 Plus Giá Rẻ</a>
+            </div>
           </div>
 
           <div class="header__cart">
@@ -316,6 +329,85 @@
         </div>
       </div>
     </header>
+
+
+    <div class="banner">
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column-8 ">
+            <div class="banner__slideshow">
+              <a class="banner__slideshow-link" href="#">
+                <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-1.jpeg" alt="Slideshow">
+              </a>
+
+              <div class="banner__slideshow-control">
+                <button class="banner__slideshow-btn">
+                  <i class="banner__slideshow-icon fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button class="banner__slideshow-btn">
+                  <i class="banner__slideshow-icon fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__column-4">
+            <div class="banner__list">
+              <div class="banner__item">
+                <a class="banner__item-link" href="#">
+                  <img class="banner__item-img" src="./assets/img/header/banner/banner-1.jpeg" alt="Slideshow">
+                </a>
+              </div>
+
+              <div class="banner__item">
+                <a class="banner__item-link" href="#">
+                  <img class="banner__item-img" src="./assets/img/header/banner/banner-2.jpeg" alt="Slideshow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="grid__row">
+          <div class="banner__widget">
+            <div class="banner__widget-list">
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-1.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Hàng Chọn Giá Hời</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-2.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Mã Giảm Giá</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-3.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Miễn Phí Ship - Có Shopee</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-4.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Shopee Style Voucher 30%</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-5.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Voucher Giảm đến 1 Triệu</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-6.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Hàng Quốc Tế</p>
+              </a>
+              <a href="#" class="banner__widget-link">
+                <img src="./assets/img/header/widget/widget-7.png" alt="" class="banner__widget-img">
+                <p class="banner__widget-name">Nạp Thẻ, Dịch Vụ & Hoá Đơn</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <div class="app__container">
       <div class="grid">
