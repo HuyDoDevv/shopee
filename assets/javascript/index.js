@@ -38,3 +38,21 @@ function showSlides(n) {
 
 showSlides(slideIndex);
 startSlideshow();
+
+
+function toggleHomeCategory(direction) {
+  const homeCategoryList = document.querySelector('.home-category__content-list');
+  const btnNext = document.querySelector('.home-category__content-btn-right');
+  const btnBack = document.querySelector('.home-category__content-btn-left');
+
+  if (direction === 'next') {
+    homeCategoryList.style.transform = 'translateX(-32%)';
+    btnNext.style.display = 'none';
+    btnBack.style.display = 'block';
+  } else {
+    homeCategoryList.style.transform = 'translateX(0)';
+    btnNext.style.display = 'block';
+    btnBack.style.display = 'none';
+  }
+}
+
