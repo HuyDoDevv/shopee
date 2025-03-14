@@ -1251,10 +1251,6 @@
   transition: all .1s cubic-bezier(.4, 0, .6, 1);
 }
 
-.home-category__content-btn-right:focus .home-category__content-list {
-  transform: translateX(calc(-32%));
-}
-
 .home-category__content-btn-right {
   transform: translateX(12px);
   right: 0;
@@ -1263,6 +1259,40 @@
 
 .home-category__content-icon {
   color: black;
+}
+
+/* flash sale */
+.flash__sale-wrapper {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.flash__sale-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.flash__sale {
+  display: flex;
+}
+
+.flash__sale-logo {
+  height: 30px;
+  width: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.flash__sale-all {}
+
+.flash__sale-all-link {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .app__content {
