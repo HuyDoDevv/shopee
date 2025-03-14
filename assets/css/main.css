@@ -595,7 +595,6 @@
 
 .header__search-container {
   flex: 1;
-  overflow: hidden;
   text-decoration: none;
 }
 
@@ -635,7 +634,7 @@
   border: none;
   outline: none;
   font-size: 1.4rem;
-  color: var(--white-color);
+  color: var(--text-color);
   padding: 0 16px;
   border-radius: 3px;
 }
@@ -1013,12 +1012,9 @@
   display: block;
 }
 
-.banner__slideshow:hover .banner__slideshow-dot {
-  display: block;
-}
-
 .banner__slideshow-link {
   position: absolute;
+  display: none;
 }
 
 .banner__slideshow-img {
@@ -1049,19 +1045,21 @@
   width: 100%;
   bottom: 0;
   display: flex;
+  padding: 20px 0px;
   justify-content: center;
+  align-items: center;
   background-color: transparent;
 }
 
 .banner__slideshow-dot {
   display: block;
-  margin: 0px 10px;
+  margin: 0px 6px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   border: 1px solid hsla(0, 0%, 54%, .4);
   background-color: hsla(0, 0%, 100%, .4);
-  display: none;
+  cursor: pointer;
 }
 
 .banner__slideshow-dot-active {

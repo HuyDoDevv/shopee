@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
   <title>Document</title>
 </head>
 
@@ -339,21 +338,35 @@
               <a class="banner__slideshow-link" href="#">
                 <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-1.jpeg" alt="Slideshow">
               </a>
+              <a class="banner__slideshow-link" href="#">
+                <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-2.jpeg" alt="Slideshow">
+              </a>
+              <a class="banner__slideshow-link" href="#">
+                <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-3.jpeg" alt="Slideshow">
+              </a>
+              <a class="banner__slideshow-link" href="#">
+                <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-4.jpeg" alt="Slideshow">
+              </a>
+              <a class="banner__slideshow-link" href="#">
+                <img class="banner__slideshow-img" src="./assets/img/header/slideshow/slider-5.png" alt="Slideshow">
+              </a>
 
               <div class="banner__slideshow-control">
-                <button class="banner__slideshow-btn">
+                <button onclick="plusSlides(-1)" class="banner__slideshow-btn">
                   <i class="banner__slideshow-icon fa-solid fa-chevron-left"></i>
                 </button>
 
-                <button class="banner__slideshow-btn">
+                <button onclick="plusSlides(1)" class="banner__slideshow-btn">
                   <i class="banner__slideshow-icon fa-solid fa-chevron-right"></i>
                 </button>
               </div>
 
               <div class="banner__slideshow-dot-list">
-                <span class="banner__slideshow-dot banner__slideshow-dot-active"></span>
-                <span class="banner__slideshow-dot"></span>
-                <span class="banner__slideshow-dot"></span>
+                <span onclick="currentSlide(1)" class="banner__slideshow-dot banner__slideshow-dot-active"></span>
+                <span onclick="currentSlide(2)" class="banner__slideshow-dot"></span>
+                <span onclick="currentSlide(3)" class="banner__slideshow-dot"></span>
+                <span onclick="currentSlide(4)" class="banner__slideshow-dot"></span>
+                <span onclick="currentSlide(5)" class="banner__slideshow-dot"></span>
               </div>
             </div>
           </div>
@@ -1143,5 +1156,7 @@
   <!-- </div>
   </div> -->
 </body>
+
+<script src="./assets/javascript/index.js"></script>
 
 </html>
