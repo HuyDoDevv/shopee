@@ -1265,6 +1265,8 @@
 .flash__sale-wrapper {
   margin-top: 20px;
   background-color: #fff;
+  flex: 1;
+  overflow: hidden;
 }
 
 .flash__sale-heading {
@@ -1287,12 +1289,132 @@
   background-position: top center;
 }
 
-.flash__sale-all {}
-
 .flash__sale-all-link {
   font-size: 1.4rem;
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.flash__sale-list-wrapper {
+  overflow: hidden;
+}
+
+.flash__sale-list {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.flash__sale-item-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flash__sale-item-info {
+  position: relative;
+}
+
+.flash__sale-item-discount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: yellow;
+  padding-right: 4px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.flash__sale-item-discount-icon {
+  margin-right: 4px;
+  margin-left: -4px;
+}
+
+.flash__sale-item-mall {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  max-height: 18px;
+}
+
+.flash__sale-item-free-ship {
+  position: absolute;
+  bottom: 0;
+  max-width: 170px;
+}
+
+.flash__sale-item-img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.flash__sale-item-price {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.flash__sale-item-price-discount {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.flash__sale-item-price-discount span {
+  display: inline-block;
+  text-decoration: underline;
+  padding-right: 2px;
+}
+
+.flash__sale-item-price-progress {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 16px;
+  border-radius: 20px;
+  background: #FFD8C0;
+}
+
+.flash__sale-item-price-fire {
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  width: 20px;
+  height: 22px;
+  z-index: 2;
+}
+
+
+.flash__sale-item-price-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #FF4500, #FFB6A7);
+  border-radius: 20px;
+}
+
+.flash__sale-item-price-label {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .12);
+  border-radius: 20px;
 }
 
 .app__content {
